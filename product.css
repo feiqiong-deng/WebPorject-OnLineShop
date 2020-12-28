@@ -1,0 +1,100 @@
+img[alt="logo"] {
+  width: 80px;
+  margin-left: 70px;
+  margin-top: 15px; 
+}
+
+.top {
+  background-color:rgb(240, 210, 159);
+}
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(240，210，159);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: #999;
+
+}
+.site-header a:hover {
+  color: rgba(240，210，159);
+  text-decoration: none;
+}
+
+.backnew{
+      color: #999;
+  }
+
+.newChange{
+  background-color: rgb(240，210，159);
+}
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: rgba(240，210，159);
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(240，210，159);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: rgba(240，210，159);
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+.footer a {
+  color: rgb(87, 86, 86);
+}
+
+.footer a:hover {
+  color:white;
+}
