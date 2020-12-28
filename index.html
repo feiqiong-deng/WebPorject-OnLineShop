@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <!-- fontawesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Product example · Bootstrap</title>
+
+  <link rel="canonical" href="../product/product.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../product/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="product.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- This the logo. -->
+        <div class="col-md-1 d-flex align-items-center">
+          <img src="./logo1.png" alt="logo">
+        </div>
+        <!-- This is the title of the website. -->
+        <div class="col-md-2 d-flex align-left">
+          <label style="font-size: 90px; color: rgb(87, 86, 86);">SmartBuy</label>
+        </div>
+        <!-- This is the search bar. -->
+        <div class="col-md-1 d-flex align-left"></div>
+        <div class="col-md-5 d-flex align-items-center" id="Search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search..." name="search">
+            <div class="input-group-btn align-middle">
+              <button class="btn btn-default" type="submit"><i class="fas fa-search fa-lg"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex align-items-center justify-content-end" id="Links">
+          <ul class="nav justify-content-end" style="font-size: 15px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:rgb(87, 86, 86);">Sign In |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(87, 86, 86);">Wish List <i class="fa fa-heart"
+                  aria-hidden="true"> |</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(87, 86, 86);">View Cart <i class="fas fa-shopping-cart">
+                  |</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(87, 86, 86);">Sign Up <i class="fas fa-user-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color:rgb(250, 187, 70);" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center back">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 font-weight-normal">SmartBuy </h1>
+      <p class="lead font-weight-normal">new season will start at 2020 November 11 stay tuned.</p>
+      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+  <div style="background-color:#FFE4B5;" class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="newChange mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Winter colthes</h2>
+        <p class="lead">All new down jacket.</p>
+        <img src="images/pic03.jpg" width="456" height="425">
+        <section class="container">
+          <li class="black">$ 59.99</li>
+          <li class="black">Rating: 4.3 out of 5</li>
+          <div class="product-quantity">
+            <h3>Quantity</h3>
+            <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+            <div class="quantity-selectors-container">
+              <div class="quantity-selectors">
+                <button type="button" class="increment-quantity" aria-label="Add one"
+                  data-direction="1"><span>&#43;</span></button>
+                <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+                  disabled="disabled"><span>&#8722;</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button class="snipcart-add-item" data-item-name="The Starry Night">
+          Add to cart
+        </button>
+      </div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Acer Spin 11.6" Touchscreen</h2>
+        <p class="lead">GHz MediaTek M8183 processor with 4GB LPDDR4X RAM.64GB SSD .11.6" IPS touchscreen display</p>
+        <img src="images/pic07.jpg" width="456" height="425">
+      </div>
+      <li class="black">$499.99</li>
+      <li class="black">Rating: 4.8 out of 5</li>
+      <div class="product-quantity">
+        <h3>Quantity</h3>
+        <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+        <div class="quantity-selectors-container">
+          <div class="quantity-selectors">
+            <button type="button" class="increment-quantity" aria-label="Add one"
+              data-direction="1"><span>&#43;</span></button>
+            <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+              disabled="disabled"><span>&#8722;</span></button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <button class="snipcart-add-item" data-item-name="The Starry Night">
+        Add to cart
+      </button>
+    </div>
+  </div>
+  <div style="background-color:#FFE4B5;" class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Benefit Cosmetics </h2>
+        <p class="lead">A trio that includes the BADgal BANG! Volumizing Mascara, They‘re Real! Lengthening & Volumizing
+          Mascara</p>
+      </div> <img src="images/pic06.jpg" width="456" height="425">
+      <li class="black">$ 52.99</li>
+      <li class="black">Rating: 4.6 out of 5</li>
+      <div class="product-quantity">
+        <h3>Quantity</h3>
+        <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+        <div class="quantity-selectors-container">
+          <div class="quantity-selectors">
+            <button type="button" class="increment-quantity" aria-label="Add one"
+              data-direction="1"><span>&#43;</span></button>
+            <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+              disabled="disabled"><span>&#8722;</span></button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <button class="snipcart-add-item" data-item-name="The Starry Night">
+        Add to cart
+      </button>
+    </div>
+    <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div style="background-color:#FFE4B5;" class="my-3 py-3">
+        <h2 class="display-5">Vintage wash sweats</h2>
+        <p class="lead">Our softest sweats made to wear every day.</p>
+      </div> <img src="images/pic01.jpg" width="456" height="425">
+      <li class="black">$ 89.99</li>
+      <li class="black">Rating: 4.7 out of 5</li>
+      <div class="product-quantity">
+        <h3>Quantity</h3>
+        <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+        <div class="quantity-selectors-container">
+          <div class="quantity-selectors">
+            <button type="button" class="increment-quantity" aria-label="Add one"
+              data-direction="1"><span>&#43;</span></button>
+            <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+              disabled="disabled"><span>&#8722;</span></button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <button class="snipcart-add-item" data-item-name="The Starry Night">
+        Add to cart
+      </button>
+    </div>
+  </div>
+  <div style="background-color:#FFE4B5;" class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="newChange mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Baby,Down</h2>
+        <p class="lead">In warm ColdControl and todally toasty ColdControl Ultra Max.</p>
+        <img src="images/picbaby.jpg" width="456" height="425">
+        <section class="container">
+          <li class="black">$ 109.99</li>
+          <li class="black">Rating: 4.6 out of 5</li>
+          <div class="product-quantity">
+            <h3>Quantity</h3>
+            <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+            <div class="quantity-selectors-container">
+              <div class="quantity-selectors">
+                <button type="button" class="increment-quantity" aria-label="Add one"
+                  data-direction="1"><span>&#43;</span></button>
+                <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+                  disabled="disabled"><span>&#8722;</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button class="snipcart-add-item" data-item-name="The Starry Night">
+          Add to cart
+        </button>
+      </div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Smeg 4 Slot Toaster </h2>
+        <p class="lead">A trendy toaster featuring a steel body and four slots with three pre-set programs.</p>
+        <img src="images/pic08.jpg" width="456" height="425">
+      </div>
+      <li class="black">$ 319.99</li>
+      <li class="black">Rating: 4.8 out of 5</li>
+      <div class="product-quantity">
+        <h3>Quantity</h3>
+        <input data-min="1" data-max="0" type="text" name="quantity" value="1" readonly="true">
+        <div class="quantity-selectors-container">
+          <div class="quantity-selectors">
+            <button type="button" class="increment-quantity" aria-label="Add one"
+              data-direction="1"><span>&#43;</span></button>
+            <button type="button" class="decrement-quantity" aria-label="Subtract one" data-direction="-1"
+              disabled="disabled"><span>&#8722;</span></button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <button class="snipcart-add-item" data-item-name="The Starry Night">
+        Add to cart
+      </button>
+    </div>
+  </div>
+  <div class="footer"
+    style="background-color:rgb(240, 210, 159);color:rgb(87, 86, 86);padding-bottom: 50px;padding-top: 30px;">
+    <table id="table" style="width: 60%; text-align: center; margin-left: 350px; margin-bottom: 20px; ">
+      <tr style="font-size: 20px;font-weight: bold;">
+        <td>Customer Support</td>
+        <td>Shop With Us</td>
+        <td>Services</td>
+        <td>About Us</td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank">Contact us</a></td>
+        <td><a href="default.asp" target="_blank">Brands A-Z</a></td>
+        <td><a href="default.asp" target="_blank">Credit</a></td>
+        <td><a href="default.asp" target="_blank">Careers</a></td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank">Help & FAQs</a></td>
+        <td><a href="default.asp" target="_blank">Gift Cards</a></td>
+        <td><a href="default.asp" target="_blank">Finacial Services</a></td>
+        <td><a href="default.asp" target="_blank">Services</a></td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank">Shipping & Returns</a></td>
+        <td><a href="default.asp" target="_blank">SMS Updates</a></td>
+        <td><a href="default.asp" target="_blank">Product Protection</a></td>
+        <td><a href="default.asp" target="_blank">Become an Affiliate</a></td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank">Order Status</a></td>
+        <td><a href="default.asp" target="_blank">Bridal</a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank">Order History</a></td>
+        <td><a href="default.asp" target="_blank">Brides</a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+      </tr>
+      <tr>
+        <td><a href="default.asp" target="_blank"></a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+        <td><a href="default.asp" target="_blank"></a></td>
+      </tr>
+    </table>
+    <br>
+    <hr style="width:68%;text-align:center;">
+    <table style="width: 50%; text-align: center; margin-left: 600px;">
+      <tr>
+        <td style="font-size: x-large;"><a href="default.asp" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </td>
+        <td style="font-size: x-large;"><a href="default.asp" target="_blank"><i class="fab fa-instagram"></i></a></td>
+        <td style="font-size: x-large;"><a href="default.asp" target="_blank"><i class="fab fa-twitter"></i></a></td>
+        <td style="font-size: x-large;"><a href="default.asp" target="_blank"><i class="fab fa-youtube"></i></a></td>
+        <td style="font-size: x-large;"><a href="default.asp" target="_blank"><i class="fab fa-pinterest"></i></a></td>
+        <td></td>
+        <td></td>
+        <td style="text-align: end; font-size: large;"><a href="default.asp" target="_blank">Privacy Policy |</a></td>
+        <td style="text-align: left; font-size: large;"><a href="default.asp" target="_blank">Terms & Conditions |</a><a
+            href="default.asp" target="_blank">Site Feedback</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
