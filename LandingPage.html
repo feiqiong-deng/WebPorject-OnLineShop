@@ -12,6 +12,9 @@
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!-- My CSS-->
   <link rel="stylesheet" href="./LandingPage.css">
+
+  <script src="search-results.js"></script>
+  <script src="LandingPage.js"></script>
   <title>Project Part 1</title>
 </head>
 <body>
@@ -31,13 +34,14 @@
         <div class="col-md-1 d-flex align-left"></div>
         <div class="col-md-5 d-flex align-items-center" id="Search">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search..." name="search">
-            <div class="input-group-btn align-middle">
-              <button class="btn btn-default" onclick="window.location.href='./search-results.html'" type="button"><i class="fas fa-search fa-lg"></i></button>
-            </div>
+            <form name="myForm" action="./search-results.html" onsubmit="return visitSearchPage()" method="get">
+              <input type="text" id="mySearch" placeholder="Search..." name="search">
+              <!-- <div class="input-group-btn align-middle"> -->
+              <button class="btn btn-default" type="submit"><i class="fas fa-search fa-lg"></i></button>
+              <!-- </div> -->
+            </form>                        
           </div>
         </div>
-        <!-- These are nav-links, including logo, search bar, sign up and view cart. -->
         <div class="col-md d-flex align-items-center justify-content-end" id="Links">
           <ul class="nav justify-content-end" style="font-size: 15px;">
             <li class="nav-item">
@@ -125,37 +129,39 @@
     <h2 style="font-size: xx-large;text-align: center;padding-top: 50px;">Featured products</h2>
   </div>
   <!-- These are four columns of featured products.  -->
-  <div class="clearfix">
-    <div class="responsive" style="background-color: oldlace;">
-      <div class="gallery">
-        <a target="_blank" href="image3.png">
-          <img src="./image3.png" alt="image3">
-        </a>
-        <div class="desc">COSMETICS</div>
+  <div class="featured">
+    <div class="clearfix">
+      <div class="responsive" style="background-color: oldlace;">
+        <div class="gallery">
+          <a target="_blank" href="image3.png">
+            <img src="./image3.png" alt="image3">
+          </a>
+          <div class="desc">COSMETICS</div>
+        </div>
       </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="image4.png">
-          <img src="./image4.png" alt="image4">
-        </a>
-        <div class="desc">SMALL APPLIANCES</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="image4.png">
+            <img src="./image4.png" alt="image4">
+          </a>
+          <div class="desc">SMALL APPLIANCES</div>
+        </div>
       </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="image5.png">
-          <img src="./image5.png" alt="image5" style="padding-left: 1px;">
-        </a>
-        <div class="desc">COMPUTERS</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="image5.png">
+            <img src="./image5.png" alt="image5" style="padding-left: 1px;">
+          </a>
+          <div class="desc">COMPUTERS</div>
+        </div>
       </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="image6.png">
-          <img src="./image6.png" alt="image6">
-        </a>
-        <div class="desc">SPORTS AND LEISURES</div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="image6.png">
+            <img src="./image6.png" alt="image6">
+          </a>
+          <div class="desc">SPORTS AND LEISURES</div>
+        </div>
       </div>
     </div>
   </div>
