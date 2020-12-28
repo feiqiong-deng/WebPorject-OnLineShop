@@ -1,100 +1,172 @@
-img[alt="logo"] {
-  width: 80px;
-  margin-left: 70px;
-  margin-top: 15px; 
+#pageMiddle{
+  background-color: oldlace;
 }
 
-.top {
-  background-color:rgb(240, 210, 159);
-}
-
-.container {
-  max-width: 960px;
-}
-
-/*
- * Custom translucent site header
- */
-
-.site-header {
-  background-color: rgba(240，210，159);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.site-header a {
-  color: #999;
-
-}
-.site-header a:hover {
-  color: rgba(240，210，159);
-  text-decoration: none;
-}
-
-.backnew{
-      color: #999;
+.nav {
+    margin-left: 50px;
+    background-color:rgb(240, 210, 159);
   }
 
-.newChange{
-  background-color: rgb(240，210，159);
+.navigator {
+  background-color: oldlace;
+  padding-left: 80px;
 }
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: rgba(240，210，159);
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+.navigator a {
+  font-size: 20px;
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(240，210，159);
-  border-radius: 5px;
+#producInfor {
+  padding-left: 30px;
+  padding-top: 120px;
+  padding-right: 100px;
 }
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: rgba(240，210，159);
+.mySlides > img {
+  width:100%;
 }
 
-
-/*
- * Extra utilities
- */
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
+.column > img {
+  width:100%;
 }
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
+
+body {
+    font-family: Arial;
+    margin: 0;
   }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+
+  /* .container-fluid {
+    padding-bottom: 80px;
+    padding-top: 50px;
+  } */
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    margin-left: 250px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-left: 200px;
+    padding-top: 70px;
+    /* object-fit: contain; */
+    width: 65%;
+  }
+
+  #smallImages {
+    margin-left: 200px;
+    padding-bottom: 50px;
+    width: 65%;
+  }
+
+  .caption-container {
+    margin-left: 200px;
+    padding-bottom: 50px;
+    width: 65%;
+  }
+
+  hr {
+    width:80%;
+    text-align:left;
+    margin-left:0;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  #details {
+    font-size: 20px;
+  }
+
+  .rating p{
+    font-size: 20px;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color:grey;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.form-check-label {
+    font-size: medium;
 }
 
-.overflow-hidden { overflow: hidden; }
-
-.footer a {
-  color: rgb(87, 86, 86);
+.priceInformation {
+  font-size: x-large;
 }
 
-.footer a:hover {
-  color:white;
+.priceInformation p, .rating p {
+  display: inline;
 }
